@@ -1,0 +1,233 @@
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  background-color:rgba(235, 235, 235, 0.9);;
+}
+
+body {
+    position: absolute;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* ================================= 
+  Body
+==================================== */
+
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#search {
+    display: block;
+    margin: 25px auto 5px;
+    padding: 10px;
+    height: 40px;
+    width: 30%;
+    border: 1px solid #777;
+    border-radius: 0.25em;
+    background: rgba(245, 245, 245, 0.9);
+    box-shadow: 3px 2px 3px 0px rgba(0,0,0,0.75);
+    margin-bottom: 40px;
+  }
+  
+#search::placeholder {
+font-size: 14px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    max-width: 380px;
+    margin: 10px 10px 20px;
+    padding: 10px;
+    background: rgba(245, 245, 245, 0.9);
+    border-radius: 0.25em;
+    transition: .4s ease-out;
+    overflow: hidden;
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition:.3s all;
+}
+ 
+.grid-container:hover .card{
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+}
+
+.grid-container:hover .card:hover{
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color:rgb(97, 97, 97)
+}
+
+.avatar {
+    width: 95px;
+    margin: 0px 8px auto 10px;
+    border-radius: 50%;
+}
+  
+.text-container {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: rgba(50, 50, 50, 0.7);
+}
+  
+.card-name {
+    margin: 20px auto 0;
+}
+  
+
+.email,
+.address,
+.number,
+.address,
+.birthday {
+    color: rgb(121, 116, 116);
+}
+
+.email,
+.name,
+.address {
+    margin: 10px;
+}
+
+.email,
+.address {
+    font-size: 13px;
+}
+
+.name {
+    color: black;
+}
+
+
+/* ================================= 
+  Modal & Overlay
+==================================== */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 100, 100, 0.4)
+}
+
+.modal {
+    width: 400px;
+    height: 470px;
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+    background: rgba(245, 245, 245,);
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
+}
+
+
+.modal-content .text-container{
+    text-align: center;
+    font-size: 14px;
+}
+
+
+#email1, 
+#address1, 
+#address2 {
+    font-size: 14px;
+}
+
+.modal-content .avatar {
+    width: 160px;
+}
+
+hr {
+    margin: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* buttons */
+
+.example_c {
+    color: white !important;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #777;
+    padding: 10px;
+    border: 2px solid #777 !important;
+    display: inline;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.example_c:hover {
+    color: #ffffff !important;
+    background: black;
+    border-color: black !important;
+    transition: all 0.4s ease 0s;
+}
+
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#left,
+#right {
+    margin-top: 15px;
+}
+

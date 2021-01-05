@@ -1,138 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Employee Directory</title>
-
-    <!-- style sheets -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="hidethepainharold.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
         <h1>AWESOME STARTUP EMPLOYEE DIRECTORY</h1>
-    </header>
-    <main class="grid-container">
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
-        <div class="card">
-            <img class="avatar" src="img/member-1.jpg" />
-            <div class="text-container">
-                <h2 class="name">Haleigh Macchiarella</h2>
-                <p class="email">dtucker@yakitri.edu</p>
-                <p class="address">Chicago</p>
-            </div>
-        </div>
+        <input type="search" id="mySearch" placeholder="Search">
+      </header>
+      <div id="employees">
+        <!-- Random users -->
+      </div>
+      <!-- Modal goes here -->
+      
+    </div>
 
-        <!-- add 11 copies here -->
-        </main>
-
-        <div class="overlay hidden">
-            <div id="myModal" class="modal">
-                <button id="myBtn" class="modal-close">X</button>
-                <div class="modal-content">
-            <!-- modal information will be added with JS here -->
-                    <img class="avatar" src="member-1.jpg" />
-                    <div class="text-container">
-                        <h2 class="name">Haleigh Macchiarella</h2>
-                        <p class="email">dtucker@yakitri.edu</p>
-                        <p class="address">Chicago</p>
-                        <hr />
-                        <p>(593) 364-3249</p>
-                        <p class="address">123 Anywhere St, WV 84814</p>
-                        <p>Birthday: 01/04/85</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <script type="text/javascript" src="js/directory.js"></script>
-    <script type="text/javascript" src="js/scripts.js"></script>    
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
